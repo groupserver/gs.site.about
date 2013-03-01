@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:five="http://namespaces.zope.org/five"
+  i18n_domain="groupserver">
+
+  <browser:viewlet 
+    name="gs-site-about-home"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    manager="gs.site.home.interfaces.ISiteHomeSecondary"
+    template="browser/templates/about.pt"
+    class="gs.viewlet.viewlet.SiteViewlet"
+    permission="zope2.View"
+    weight="10"
+    title="About" />
+
+  <browser:viewlet 
+    name="gs-site-about-home-js"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    manager="gs.site.home.interfaces.ISiteHomeJS"
+    template="browser/templates/about-js.pt"
+    class="gs.viewlet.viewlet.SiteViewlet"
+    permission="zope2.View"
+    weight="10"
+    title="About Script" />
+
+  <browser:resource 
+    name="gs-site-about-home-20130301.js"
+    file="browser/javascript/about.js"
+    permission="zope2.Public" />
+
+</configure>
+
