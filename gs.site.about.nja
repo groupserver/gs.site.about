@@ -1,0 +1,7 @@
+{
+  "venv": "/opt/groupserver/bin/python", 
+  "project-type": "Import from sources", 
+  "name": "gs.site.about", 
+  "license": "GNU General Public License v3", 
+  "description": "The About box on the site homepage"
+}
