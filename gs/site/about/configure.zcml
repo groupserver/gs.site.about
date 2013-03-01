@@ -4,6 +4,7 @@
   xmlns:five="http://namespaces.zope.org/five"
   i18n_domain="groupserver">
 
+  <!-- The box on the site homepage -->
   <browser:viewlet 
     name="gs-site-about-home"
     for="Products.GSContent.interfaces.IGSSiteFolder"
@@ -13,7 +14,6 @@
     permission="zope2.View"
     weight="10"
     title="About" />
-
   <browser:viewlet 
     name="gs-site-about-home-js"
     for="Products.GSContent.interfaces.IGSSiteFolder"
@@ -23,11 +23,21 @@
     permission="zope2.View"
     weight="10"
     title="About Script" />
-
   <browser:resource 
     name="gs-site-about-home-20130301.js"
     file="browser/javascript/about.js"
     permission="zope2.Public" />
 
-</configure>
+  <!-- The Change page -->
+  <browser:page
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    name="admin_changeintro.html"
+    class=".change.Change"
+    permission="zope2.ManageProperties"/>
+  <utility
+    factory=".audit.ChangeAuditEventFactory"
+    name="groupserver.ChangeSiteIntoAudit"
+    permission="zope.Public" />
+  <interface interface=".interfaces.ISiteIntro" />
 
+</configure>

@@ -17,8 +17,19 @@ The About box on a GroupServer Site
 Introduction
 ============
 
-This product provides the *About* box on the homepage of a GroupServer_
+This product provides the `About box`_ on the homepage of a GroupServer_
 site.
+
+About Box
+=========
+
+The *About* box consists of three components: 
+
+#. The box itself, a viewlet called ``gs-site-about-home``,
+#. The JavaScript for the box, in a resource called
+   ``gs-site-about-home-20130301.js``, and
+#. A viewlet to connect the viewlet to the script
+   ``gs-site-about-home-js``.
 
 Resources
 =========
