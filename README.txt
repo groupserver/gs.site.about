@@ -18,9 +18,9 @@ Introduction
 ============
 
 This product provides the `About box`_ on the homepage of a GroupServer_
-site.
+site, and the `Change page`_ to alter it.
 
-About Box
+About box
 =========
 
 The *About* box consists of three components: 
@@ -30,6 +30,15 @@ The *About* box consists of three components:
    ``gs-site-about-home-20130301.js``, and
 #. A viewlet to connect the viewlet to the script
    ``gs-site-about-home-js``.
+
+The contents of the *About* box comes from the ``introduction`` property of
+the site-folder.
+
+Change page
+===========
+
+The *Change About* page ``/admin_changeintro.html`` is also provided by
+this product.
 
 Resources
 =========
