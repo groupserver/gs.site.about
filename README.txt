@@ -53,3 +53,4 @@ Resources
 .. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
    http://creativecommons.org/licenses/by-sa/3.0/nz/
 .. _browser resource: http://docs.zope.org/zope.browserresource/
+.. _OnlineGroups.Net: http://onlinegroups.net/
