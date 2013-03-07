@@ -9,9 +9,9 @@
     I should fix this one day.
   </div><!--gs-content-js-more-content-->
   <p class="gs-content-js-more-buttons" aria-hidden="true">
-    <a class="gs-content-js-more-buttons-more"
+    <a class="gs-content-js-more-buttons-more muted"
        href="#">More</a>
-    <a class="gs-content-js-more-buttons-less"
-       href="#"><span class="minor">Less</span></a>
+    <a class="gs-content-js-more-buttons-less muted"
+       href="#">&#215;</a>
   </p><!--gs-content-js-more-buttons-->
 </div><!--gs-site-about-home-->
