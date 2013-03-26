@@ -1,7 +1,7 @@
 jQuery.noConflict();
 
 function gs_site_about_change_init () {
-    
+    // This space deliberately left blank.
 }
 
 jQuery(window).load( function () {

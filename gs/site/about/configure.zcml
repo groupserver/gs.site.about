@@ -56,5 +56,9 @@
     name="gs-site-about-change-20130301.js"
     file="browser/javascript/change.js"
     permission="zope2.Public" />
+  <browser:resource 
+    name="gs-site-about-change-min-20130301.js"
+    file="browser/javascript/change-min.js"
+    permission="zope2.Public" />
 
 </configure>

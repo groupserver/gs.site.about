@@ -40,14 +40,8 @@
       </form>
     </tal:block>
     <tal:block metal:fill-slot="javascript">
-      <script src="/++resource++gs-site-about-change-20130301.js"
+      <script src="/++resource++gs-site-about-change-min-20130301.js"
               defer="true" type="text/javascript">&#160;</script>
-      <!--script type="text/javascript"
-        tal:define="widgets view/widgets; 
-          button string:#form\\.actions\\.change"
-        tal:content="provider:groupserver.RequiredWidgetsJavaScript">
-        alert("I have not been replaced.");
-      </script-->
     </tal:block>
   </body>
 </html>
