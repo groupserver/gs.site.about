@@ -1,12 +1,12 @@
 # coding=utf-8
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
-from gs.content.form.form import SiteForm
+from gs.content.form import SiteForm
 from gs.content.form.utils import enforce_schema
 from gs.content.form.wymeditor import wym_editor_widget
 from Products.XWFCore.XWFUtils import get_the_actual_instance_from_zope
-from interfaces import ISiteIntro
 from audit import ChangeAuditor, CHANGE
+from interfaces import ISiteIntro
 
 
 class Change(SiteForm):
@@ -16,7 +16,7 @@ class Change(SiteForm):
     form_fields = form.Fields(ISiteIntro, render_context=True)
 
     def __init__(self, context, request):
-        SiteForm.__init__(self, context, request)
+        super(Change, self).__init__(context, request)
         enforce_schema(context, ISiteIntro)
         self.form_fields['introduction'].custom_widget = \
             wym_editor_widget
