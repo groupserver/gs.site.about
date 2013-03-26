@@ -27,6 +27,10 @@
     name="gs-site-about-home-20130301.js"
     file="browser/javascript/about.js"
     permission="zope2.Public" />
+  <browser:resource 
+    name="gs-site-about-home-min-20130301.js"
+    file="browser/javascript/about-min.js"
+    permission="zope2.Public" />
 
   <!-- The Change page -->
   <browser:viewlet 
