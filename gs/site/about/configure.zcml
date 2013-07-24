@@ -14,6 +14,23 @@
     permission="zope2.View"
     weight="10"
     title="About" />
+  <browser:viewletManager
+    name="groupserver.SiteHomeAbout"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    provides=".interfaces.IGSSiteHomeAbout"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/simplemanager.pt"
+    permission="zope2.View" />
+  <browser:viewlet
+    name="gs-site-about-home-content"
+    for="Products.GSContent.interfaces.IGSSiteFolder"
+    manager=".interfaces.IGSSiteHomeAbout"
+    template="browser/templates/content.pt"
+    class="gs.viewlet.SiteViewlet"
+    permission="zope2.View"
+    weight="10"
+    title="About" />
+
   <browser:viewlet 
     name="gs-site-about-home-js"
     for="Products.GSContent.interfaces.IGSSiteFolder"
@@ -36,7 +53,7 @@
   <browser:viewlet 
     name="gs-site-about-home-change"
     for="Products.GSContent.interfaces.IGSSiteFolder"
-    manager="gs.site.home.interfaces.ISiteHomeSecondary"
+    manager=".interfaces.IGSSiteHomeAbout"
     template="browser/templates/changelink.pt"
     class="gs.viewlet.SiteViewlet"
     permission="zope2.ManageProperties"

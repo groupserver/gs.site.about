@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from gs.content.form import SiteForm
@@ -10,7 +10,7 @@ from interfaces import ISiteIntro
 
 
 class Change(SiteForm):
-    label = u'Change About'
+    label = u'Change about'
     pageTemplateFileName = 'browser/templates/change.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
     form_fields = form.Fields(ISiteIntro, render_context=True)

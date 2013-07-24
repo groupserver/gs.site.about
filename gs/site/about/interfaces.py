@@ -1,6 +1,7 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 from zope.interface.interface import Interface
 from zope.schema import Text
+from zope.viewlet.interfaces import IViewletManager
 
 
 class ISiteIntro(Interface):
@@ -8,3 +9,7 @@ class ISiteIntro(Interface):
                     description=u'The text that you want to see on the site '
                         u'homepage.',
                     required=True)
+
+
+class IGSSiteHomeAbout(IViewletManager):
+    u'''The About text that appears on the site homepage'''
