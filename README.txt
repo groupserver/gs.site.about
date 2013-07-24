@@ -7,7 +7,7 @@ The About box on a GroupServer Site
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-03-01
+:Date: 2013-07-24
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -23,9 +23,12 @@ site, and the `Change page`_ to alter it.
 About box
 =========
 
-The *About* box consists of three components: 
+The *About* box consists of five components: 
 
 #. The box itself, a viewlet called ``gs-site-about-home``,
+#. The content of the box, ``gs-site-about-home-content``,
+#. A link from the box to the `Change page`_,
+   ``gs-site-about-home-change``,
 #. The JavaScript for the box, in a resource called
    ``gs-site-about-home-20130301.js``, and
 #. A viewlet to connect the viewlet to the script
@@ -38,7 +41,8 @@ Change page
 ===========
 
 The *Change About* page ``/admin_changeintro.html`` is also provided by
-this product.
+this product. It changes the ``introduction`` property of the site-folder,
+which is then used by the `About box`_.
 
 Resources
 =========
