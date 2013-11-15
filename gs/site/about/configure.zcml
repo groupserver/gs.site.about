@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright © 2013 OnlineGroups.net and Contributors. -->
+<!-- All Rights Reserved. -->
+
+<!-- This software is subject to the provisions of the Zope Public -->
+<!-- License, Version 2.1 (ZPL).  A copy of the ZPL should accompany this -->
+<!-- distribution. -->
+
+<!-- THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED -->
+<!-- WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED -->
+<!-- WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE. -->
 <configure xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:five="http://namespaces.zope.org/five"
-  i18n_domain="groupserver">
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="groupserver">
+
+  <include package="zope.viewlet" file="meta.zcml" />
 
   <!-- The box on the site homepage -->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-site-about-home"
     for="Products.GSContent.interfaces.IGSSiteFolder"
     manager="gs.site.home.interfaces.ISiteHomeSecondary"
@@ -31,7 +43,7 @@
     weight="10"
     title="About" />
 
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-site-about-home-js"
     for="Products.GSContent.interfaces.IGSSiteFolder"
     manager="gs.site.home.interfaces.ISiteHomeJS"
@@ -40,17 +52,17 @@
     permission="zope2.View"
     weight="10"
     title="About Script" />
-  <browser:resource 
+  <browser:resource
     name="gs-site-about-home-20130301.js"
     file="browser/javascript/about.js"
     permission="zope2.Public" />
-  <browser:resource 
+  <browser:resource
     name="gs-site-about-home-min-20130301.js"
     file="browser/javascript/about-min.js"
     permission="zope2.Public" />
 
   <!-- The Change page -->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-site-about-home-change"
     for="Products.GSContent.interfaces.IGSSiteFolder"
     manager=".interfaces.IGSSiteHomeAbout"
@@ -69,11 +81,11 @@
     name="groupserver.ChangeSiteIntoAudit"
     permission="zope.Public" />
   <interface interface=".interfaces.ISiteIntro" />
-  <browser:resource 
+  <browser:resource
     name="gs-site-about-change-20130301.js"
     file="browser/javascript/change.js"
     permission="zope2.Public" />
-  <browser:resource 
+  <browser:resource
     name="gs-site-about-change-min-20130301.js"
     file="browser/javascript/change-min.js"
     permission="zope2.Public" />
