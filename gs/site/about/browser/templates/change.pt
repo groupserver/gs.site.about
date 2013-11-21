@@ -44,9 +44,6 @@
       </div><!--buttons-->
     </form><!--gs-site-about-change-->
     <tal:block metal:fill-slot="javascript">
-      <script type="text/javascript"
-              src="/++resource++gs-site-about-change-min-20130301.js"
-              defer="true">&#160;</script>
       <script class="gs-content-js-wymeditor"
               type="text/javascript"
               data-text-element="#form\.introduction"
