@@ -1,2 +1,4 @@
-<script id="gs-site-about-home-js" defer="true" type="text/javascript" 
-        src="/++resource++gs-site-about-home-min-20130301.js">&#160;</script>
+<script id="gs-site-about-home-js"
+        type="text/javascript"
+        src="/++resource++gs-site-about-home-min-20140313.js"
+        defer="defer"> </script><!--gs-site-about-home-js-->

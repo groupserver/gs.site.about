@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- Copyright © 2013 OnlineGroups.net and Contributors. -->
+<!-- Copyright © 2013, 2014 OnlineGroups.net and Contributors. -->
 <!-- All Rights Reserved. -->
 
 <!-- This software is subject to the provisions of the Zope Public -->
@@ -53,11 +53,11 @@
     weight="10"
     title="About Script" />
   <browser:resource
-    name="gs-site-about-home-20130301.js"
+    name="gs-site-about-home-20140313.js"
     file="browser/javascript/about.js"
     permission="zope2.Public" />
   <browser:resource
-    name="gs-site-about-home-min-20130301.js"
+    name="gs-site-about-home-min-20140313.js"
     file="browser/javascript/about-min.js"
     permission="zope2.Public" />
 
