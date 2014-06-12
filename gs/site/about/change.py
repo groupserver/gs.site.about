@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
+from __future__ import absolute_import
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
-from gs.content.form import SiteForm
-from gs.content.form.utils import enforce_schema
-from gs.content.form.wymeditor import wym_editor_widget
+from gs.content.form.base import SiteForm
+from gs.content.form.base.wymeditor import wym_editor_widget
+from gs.content.form.base.utils import enforce_schema
 from Products.XWFCore.XWFUtils import get_the_actual_instance_from_zope
-from audit import ChangeAuditor, CHANGE
-from interfaces import ISiteIntro
+from .audit import ChangeAuditor, CHANGE
+from .interfaces import ISiteIntro
 
 
 class Change(SiteForm):
