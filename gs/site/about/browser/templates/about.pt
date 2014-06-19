@@ -1,4 +1,4 @@
-<div id="gs-site-about-home" role="region" class="gs-content-js-more"
+<div id="gs-site-about-home" role="region"
      aria-labelledby="gs-site-about-home-h">
   <h3 id="gs-site-about-home-h">About</h3>
   <tal:block replace="structure provider:groupserver.SiteHomeAbout" />

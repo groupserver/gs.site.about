@@ -43,24 +43,6 @@
     weight="10"
     title="About" />
 
-  <browser:viewlet
-    name="gs-site-about-home-js"
-    for="Products.GSContent.interfaces.IGSSiteFolder"
-    manager="gs.site.home.interfaces.ISiteHomeJS"
-    template="browser/templates/about-js.pt"
-    class="gs.viewlet.SiteViewlet"
-    permission="zope2.View"
-    weight="10"
-    title="About Script" />
-  <browser:resource
-    name="gs-site-about-home-20140313.js"
-    file="browser/javascript/about.js"
-    permission="zope2.Public" />
-  <browser:resource
-    name="gs-site-about-home-min-20140313.js"
-    file="browser/javascript/about-min.js"
-    permission="zope2.Public" />
-
   <!-- The Change page -->
   <browser:viewlet
     name="gs-site-about-home-change"
