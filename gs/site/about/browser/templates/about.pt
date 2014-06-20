@@ -1,5 +1,6 @@
-<div id="gs-site-about-home" role="region"
+<div id="gs-site-about-home" role="region" i18n:domain="groupserver"
      aria-labelledby="gs-site-about-home-h">
-  <h3 id="gs-site-about-home-h">About</h3>
+  <h3 id="gs-site-about-home-h"
+      i18n:translate="">About</h3>
   <tal:block replace="structure provider:groupserver.SiteHomeAbout" />
 </div><!--gs-site-about-home-->
