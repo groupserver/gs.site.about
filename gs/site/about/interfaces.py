@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-##############################################################################
+############################################################################
 #
-# Copyright © 2013 OnlineGroups.net and Contributors.
+# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -11,18 +11,19 @@
 # WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
 # FOR A PARTICULAR PURPOSE.
 #
-##############################################################################
+############################################################################
+from __future__ import absolute_import, unicode_literals
 from zope.interface.interface import Interface
 from zope.schema import Text
 from zope.viewlet.interfaces import IViewletManager
 
 
 class ISiteIntro(Interface):
-    introduction = Text(title=u'Introduction Text',
-                    description=u'The text that you want to see on the site '
-                        u'homepage.',
-                    required=True)
+    introduction = Text(
+        title='Introduction Text',
+        description='The text that you want to see on the site homepage.',
+        required=True)
 
 
 class IGSSiteHomeAbout(IViewletManager):
-    u'''The About text that appears on the site homepage'''
+    '''The About text that appears on the site homepage'''
