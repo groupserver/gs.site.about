@@ -1,3 +1,6 @@
-<a id="gs-site-about-home-change-link" 
+<a xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+   i18n:domain="gs.site.about"
+   i18n:translate=""
+   id="gs-site-about-home-change-link"
    class="btn btn-mini"
    href="/admin_changeintro.html">Change</a>

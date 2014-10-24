@@ -1,5 +1,6 @@
 <div id="gs-site-about-home-content"
-     tal:content="structure here/introduction">
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      tal:content="structure here/introduction">
   The About text on the site homepage.
   It gets here due to <strong>acquisition.</strong>
   Acquisition is a Bad Thing.

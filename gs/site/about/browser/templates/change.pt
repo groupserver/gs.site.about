@@ -1,6 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="gs.site.about"
       metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
@@ -15,7 +17,8 @@
   </head>
   <body>
     <tal:block content="structure provider:groupserver.FormStatusMessage"
-               define="errors view/errors; status view/status; widgets view/widgets"
+               define="errors view/errors; status view/status;
+                       widgets view/widgets"
                metal:fill-slot="messages">&#160;</tal:block>
     <ul metal:fill-slot="breadcrumb">
       <li>
@@ -33,6 +36,11 @@
           enctype="multipart/form-data" method="post" action="."
           tal:attributes="action request/URL" >
       <h1 tal:content="view/label">Edit Profile</h1>
+      <p i18n:translate="" class="intro">
+        To change the <cite class="page">About</cite> text on the
+        site homepage write the new text in the editor below and
+        click the <samp class="button">Change</samp> button.
+      </p>
       <tal:block define="widgets view/widgets"
                  replace="structure provider:groupserver.FormWidgets"/>
       <div class="buttons" tal:condition="view/availableActions">
