@@ -1,6 +1,6 @@
 syntax: glob
 *pyc
+*mo
 *~
 *egg-info
 dist
-
