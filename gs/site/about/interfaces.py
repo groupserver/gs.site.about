@@ -16,12 +16,14 @@ from __future__ import absolute_import, unicode_literals
 from zope.interface.interface import Interface
 from zope.schema import Text
 from zope.viewlet.interfaces import IViewletManager
+from . import GSMessageFactory as _
 
 
 class ISiteIntro(Interface):
     introduction = Text(
-        title='Introduction Text',
-        description='The text that you want to see on the site homepage.',
+        title=_('Introduction Text'),
+        description=_('The text that you want to see on the site '
+                      'homepage.'),
         required=True)
 
 

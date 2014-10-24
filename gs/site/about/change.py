@@ -21,10 +21,11 @@ from gs.content.form.base.utils import enforce_schema
 from Products.XWFCore.XWFUtils import get_the_actual_instance_from_zope
 from .audit import ChangeAuditor, CHANGE
 from .interfaces import ISiteIntro
+from . import GSMessageFactory as _
 
 
 class Change(SiteForm):
-    label = 'Change about'
+    label = _('Change about')
     pageTemplateFileName = 'browser/templates/change.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
     form_fields = form.Fields(ISiteIntro, render_context=True)
@@ -35,18 +36,18 @@ class Change(SiteForm):
         self.form_fields['introduction'].custom_widget = \
             wym_editor_widget
 
-    @form.action(label='Change', failure='handle_change_action_failure')
+    @form.action(label=_('Change'), failure='handle_change_action_failure')
     def handle_change(self, action, data):
         ctx = get_the_actual_instance_from_zope(self.context)
         form.applyChanges(ctx, self.form_fields, data)
         auditor = ChangeAuditor(ctx)
         auditor.info(CHANGE, str(len(data['introduction'])))
-        self.status = ('The introduction text that appears on '
-                       '<a href="/">the site homepage</a> has been '
-                       'changed.')
+        self.status = _('The introduction text that appears on '
+                        '<a href="/">the site homepage</a> has been '
+                        'changed.')
 
     def handle_change_action_failure(self, action, data, errors):
         if len(errors) == 1:
-            self.status = '<p>There is an error:</p>'
+            self.status = _('<p>There is an error:</p>')
         else:
-            self.status = '<p>There are errors:</p>'
+            self.status = _('<p>There are errors:</p>')
