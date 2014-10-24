@@ -1,4 +1,18 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
+############################################################################
+#
+# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+############################################################################
+from __future__ import absolute_import, unicode_literals
 from datetime import datetime
 from pytz import UTC
 from zope.component import createObject
@@ -10,8 +24,8 @@ from Products.CustomUserFolder.userinfo import userInfo_to_anchor
 from Products.XWFCore.XWFUtils import munge_date
 
 SUBSYSTEM = 'groupserver.SiteIntroduction'
-import logging
-log = logging.getLogger(SUBSYSTEM)
+from logging import getLogger
+log = getLogger(SUBSYSTEM)
 
 UNKNOWN = '0'
 CHANGE = '1'
@@ -20,21 +34,22 @@ CHANGE = '1'
 class ChangeAuditEventFactory(object):
     implements(IFactory)
 
-    title = u'Change Site Introduction Audit-Event Factory'
-    description = u'Creates a GroupServer audit event for changing '\
-                    u'the site introduction.'
+    title = 'Change Site Introduction Audit-Event Factory'
+    description = 'Creates a GroupServer audit event for changing '\
+                  'the site introduction.'
 
-    def __call__(self, context, event_id, code, date,
-        userInfo, instanceUserInfo, siteInfo, groupInfo=None,
-        instanceDatum='', supplementaryDatum='', subsystem=''):
+    def __call__(self, context, event_id, code, date, userInfo,
+                 instanceUserInfo, siteInfo, groupInfo=None,
+                 instanceDatum='', supplementaryDatum='', subsystem=''):
 
         if (code == CHANGE):
             event = ChangeEvent(context, event_id, date, siteInfo,
-                        userInfo, instanceDatum)
+                                userInfo, instanceDatum)
         else:
             event = BasicAuditEvent(context, event_id, UNKNOWN, date,
-              userInfo, None, siteInfo, None,
-              instanceDatum, supplementaryDatum, SUBSYSTEM)
+                                    userInfo, None, siteInfo, None,
+                                    instanceDatum, supplementaryDatum,
+                                    SUBSYSTEM)
         assert event
         return event
 
@@ -43,25 +58,25 @@ class ChangeEvent(BasicAuditEvent):
     implements(IAuditEvent)
 
     def __init__(self, context, id, d, userInfo, siteInfo, instanceDatum):
-        BasicAuditEvent.__init__(self, context, id, CHANGE, d, userInfo,
-            None, siteInfo, None, instanceDatum, None, SUBSYSTEM)
+        super(BasicAuditEvent, self).__init__(
+            context, id, CHANGE, d, userInfo, None, siteInfo, None,
+            instanceDatum, None, SUBSYSTEM)
 
-    def __str__(self):
-        retval = u'%s (%s) changed the site introduction text on %s '\
-                    u'(%s). The introduction is now %s characters.' % \
-                    (self.userInfo.name, self.userInfo.id,
-                    self.siteInfo.name, self.siteInfo.id,
-                    self.instanceDatum)
-        return retval.encode('ascii', 'ignore')
+    def __unicode__(self):
+        retval = '%s (%s) changed the site introduction text on %s '\
+                 '(%s). The introduction is now %s characters.' % \
+                 (self.userInfo.name, self.userInfo.id,
+                  self.siteInfo.name, self.siteInfo.id,
+                  self.instanceDatum)
+        return retval
 
     @property
     def xhtml(self):
-        cssClass = u'audit-event site-event-%s' % self.code
-        retval = u'<span class="%s">Change introduction</span>' % cssClass
-        retval = u'%s &#8212; %s' % \
-              (retval, userInfo_to_anchor(self.userInfo))
-        retval = u'%s (%s)' % \
-          (retval, munge_date(self.context, self.date))
+        cssClass = 'audit-event site-event-%s' % self.code
+        retval = '<span class="%s">Change introduction</span>' % cssClass
+        retval = '%s &#8212; %s' % (retval,
+                                    userInfo_to_anchor(self.userInfo))
+        retval = '%s (%s)' % (retval, munge_date(self.context, self.date))
         return retval
 
 
@@ -77,11 +92,11 @@ class ChangeAuditor(object):
     def info(self, code, instanceDatum=''):
         d = datetime.now(UTC)
         eventId = event_id_from_data(self.userInfo, self.userInfo,
-                    self.siteInfo, code, instanceDatum, '')
+                                     self.siteInfo, code, instanceDatum, '')
 
         e = self.factory(self.site, eventId, code, d, self.userInfo,
-                None, self.siteInfo, None, instanceDatum, None,
-                SUBSYSTEM)
+                         None, self.siteInfo, None, instanceDatum, None,
+                         SUBSYSTEM)
 
         self.queries.store(e)
         log.info(e)
