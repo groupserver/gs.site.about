@@ -1,6 +1,15 @@
 Changelog
 =========
 
+2.6.0 (2014-10-24)
+------------------
+
+* Adding internationalisation
+* Using GitHub_ as the main code repository, and naming the
+  reStructuredText files as such.
+
+.. _GitHub: https://github.com/groupserver/gs.site.about/
+
 2.5.0 (2014-06-19)
 ------------------
 
@@ -43,3 +52,5 @@ Changelog
 ------------------
 
 * Initial import, moving the code here from ``gs.site.home``
+
+..  LocalWords:  Changelog GitHub reStructuredText
