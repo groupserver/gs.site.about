@@ -9,35 +9,35 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
 #: ./change.py:53
 msgid "<p>There are errors:</p>"
-msgstr ""
+msgstr "Il y a quelques problèms:"
 
 #: ./change.py:51
 msgid "<p>There is an error:</p>"
-msgstr ""
+msgstr "Changez"
 
 #: ./browser/templates/about.pt:6
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: ./browser/templates/changelink.pt:1
 #: ./change.py:39
 msgid "Change"
-msgstr ""
+msgstr "Changez"
 
 #: ./change.py:28
 msgid "Change about"
-msgstr ""
+msgstr "Changez le texte à propos le site web"
 
 #: ./interfaces.py:24
 msgid "Introduction Text"
-msgstr ""
+msgstr "La texte introduction"
 
 #: ./change.py:45
 msgid "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ./interfaces.py:25
 msgid "The text that you want to see on the site homepage."
-msgstr ""
+msgstr "La texte sur la page web"
 
 #: ./browser/templates/change.pt:39
 msgid "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
