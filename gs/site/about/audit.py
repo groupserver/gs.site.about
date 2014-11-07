@@ -58,7 +58,7 @@ class ChangeEvent(BasicAuditEvent):
     implements(IAuditEvent)
 
     def __init__(self, context, id, d, userInfo, siteInfo, instanceDatum):
-        super(BasicAuditEvent, self).__init__(
+        super(ChangeEvent, self).__init__(
             context, id, CHANGE, d, userInfo, None, siteInfo, None,
             instanceDatum, None, SUBSYSTEM)
 

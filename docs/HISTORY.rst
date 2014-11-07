@@ -1,12 +1,17 @@
 Changelog
 =========
 
+2.6.1 (2014-11-07)
+------------------
+
+* Fixing an error with a ``super`` call
+
 2.6.0 (2014-10-24)
 ------------------
 
 * Adding internationalisation
 * Using GitHub_ as the main code repository, and naming the
-  reStructuredText files as such.
+  reStructuredText files as such
 
 .. _GitHub: https://github.com/groupserver/gs.site.about/
 
