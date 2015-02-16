@@ -1,18 +1,22 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: gs.site.about\n"
 "POT-Creation-Date: 2014-10-24 17:22+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-02-16 13:05+0000\n"
+"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/gs-site-about/language/fr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: fr\n"
-"Language-Name: French\n"
+"Domain: gs.site.about\n"
+"Language: fr\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
 
 #: ./change.py:53
 msgid "<p>There are errors:</p>"
@@ -26,8 +30,7 @@ msgstr "Changez"
 msgid "About"
 msgstr "À propos"
 
-#: ./browser/templates/changelink.pt:1
-#: ./change.py:39
+#: ./browser/templates/changelink.pt:1 ./change.py:39
 msgid "Change"
 msgstr "Changez"
 
@@ -40,7 +43,9 @@ msgid "Introduction Text"
 msgstr "La texte introduction"
 
 #: ./change.py:45
-msgid "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
+msgid ""
+"The introduction text that appears on <a href=\"/\">the site homepage</a> "
+"has been changed."
 msgstr ""
 
 #: ./interfaces.py:25
@@ -48,6 +53,8 @@ msgid "The text that you want to see on the site homepage."
 msgstr "La texte sur la page web"
 
 #: ./browser/templates/change.pt:39
-msgid "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
+msgid ""
+"To change the <cite class=\"page\">About</cite> text on the site homepage "
+"write the new text in the editor below and click the <samp "
+"class=\"button\">Change</samp> button."
 msgstr ""
-
