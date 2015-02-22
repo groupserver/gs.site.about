@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-02-22 22:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#. Default: "About"
+#: ./browser/templates/about.pt:6
+msgid "about"
+msgstr ""
+
+#. Default: "Change about"
+#: ./change.py:28
+msgid "change-about-form-label"
+msgstr ""
+
+#. Default: "Change"
+#: ./change.py:39
+msgid "change-action"
+msgstr ""
+
+#. Default: "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
+#: ./browser/templates/change.pt:39
+msgid "change-introduction-instructions"
+msgstr ""
+
+#. Default: "Change"
+#: ./browser/templates/changelink.pt:1
+msgid "change-link"
+msgstr ""
+
+#. Default: "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
+#: ./change.py:46
+msgid "change-success"
+msgstr ""
+
+#. Default: "The text that you want to see on the site homepage."
+#: ./interfaces.py:25
+msgid "introduction-entry-description"
+msgstr ""
+
+#. Default: "Introduction Text"
+#: ./interfaces.py:24
+msgid "introduction-entry-label"
+msgstr ""
+
+#. Default: "<p>There is an error:</p>"
+#: ./change.py:54
+msgid "status-problem"
+msgstr ""
+
+#. Default: "<p>There are errors:</p>"
+#: ./change.py:57
+msgid "status-problems"
+msgstr ""
+
