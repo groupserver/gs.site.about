@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.about\n"
-"POT-Creation-Date: 2015-02-22 20:32+0000\n"
+"POT-Creation-Date: 2015-02-22 20:35+0000\n"
 "PO-Revision-Date: 2015-02-18 15:12+0000\n"
 "Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-about/language/de/)\n"
