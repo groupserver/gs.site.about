@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.about\n"
 "POT-Creation-Date: 2015-02-22 20:35+0000\n"
-"PO-Revision-Date: 2015-02-22 20:39+0000\n"
+"PO-Revision-Date: 2015-02-22 20:40+0000\n"
 "Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-about/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr "Text der Einleitung"
 #. Default: "<p>There is an error:</p>"
 #: ./change.py:54
 msgid "status-problem"
-msgstr "<p>Es is ein Fehler aufgetreten:</p>"
+msgstr "<p>Es ist ein Fehler aufgetreten:</p>"
 
 #. Default: "<p>There are errors:</p>"
 #: ./change.py:57
