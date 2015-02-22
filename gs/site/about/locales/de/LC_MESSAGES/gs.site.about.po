@@ -1,40 +1,41 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
+# 
 # Translators:
 # Alice Rose <heldinz@posteo.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.about\n"
 "POT-Creation-Date: 2015-02-22 20:35+0000\n"
-"PO-Revision-Date: 2015-02-18 15:12+0000\n"
+"PO-Revision-Date: 2015-02-22 20:39+0000\n"
 "Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-about/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Domain: DOMAIN\n"
+"Language: de\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: gs.site.about\n"
-"Language: de\n"
 
 #. Default: "About"
 #: ./browser/templates/about.pt:6
 msgid "about"
-msgstr ""
+msgstr "Über diese Webseite"
 
 #. Default: "Change about"
 #: ./change.py:28
 msgid "change-about-form-label"
-msgstr ""
+msgstr "\"Über diese Webseite\" ändern"
 
 #. Default: "Change"
 #: ./change.py:39
 msgid "change-action"
-msgstr ""
+msgstr "Ändern"
 
-#. Default: "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
+#. Default: "To change the <cite class=\"page\">About</cite> text on the site
+#. homepage write the new text in the editor below and click the <samp
+#. class=\"button\">Change</samp> button."
 #: ./browser/templates/change.pt:39
 msgid "change-introduction-instructions"
 msgstr ""
@@ -42,9 +43,10 @@ msgstr ""
 #. Default: "Change"
 #: ./browser/templates/changelink.pt:1
 msgid "change-link"
-msgstr ""
+msgstr "Ändern"
 
-#. Default: "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
+#. Default: "The introduction text that appears on <a href=\"/\">the site
+#. homepage</a> has been changed."
 #: ./change.py:46
 msgid "change-success"
 msgstr ""
@@ -57,15 +59,14 @@ msgstr ""
 #. Default: "Introduction Text"
 #: ./interfaces.py:24
 msgid "introduction-entry-label"
-msgstr ""
+msgstr "Text der Einleitung"
 
 #. Default: "<p>There is an error:</p>"
 #: ./change.py:54
 msgid "status-problem"
-msgstr ""
+msgstr "<p>Es is ein Fehler aufgetreten:</p>"
 
 #. Default: "<p>There are errors:</p>"
 #: ./change.py:57
 msgid "status-problems"
-msgstr ""
-
+msgstr "<p>Es sind mehrere Fehler aufgetreten:</p>"
