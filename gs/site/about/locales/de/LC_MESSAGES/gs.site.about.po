@@ -5,57 +5,67 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.about\n"
-"POT-Creation-Date: 2014-10-24 17:22+0000\n"
+"POT-Creation-Date: 2015-02-22 20:32+0000\n"
 "PO-Revision-Date: 2015-02-18 15:12+0000\n"
 "Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-about/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Domain: gs.site.about\n"
-"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
+"Domain: gs.site.about\n"
+"Language: de\n"
 
-#: ./change.py:53
-msgid "<p>There are errors:</p>"
-msgstr "<p>Es gab mehrere Fehler:</p>"
-
-#: ./change.py:51
-msgid "<p>There is an error:</p>"
-msgstr "<p>Es gab einen Fehler:</p>"
-
+#. Default: "About"
 #: ./browser/templates/about.pt:6
-msgid "About"
-msgstr "Über diese Webseite"
+msgid "about"
+msgstr ""
 
-#: ./browser/templates/changelink.pt:1 ./change.py:39
-msgid "Change"
-msgstr "Ändern"
-
+#. Default: "Change about"
 #: ./change.py:28
-msgid "Change about"
-msgstr "\"Über diese Webseite\" ändern"
+msgid "change-about-form-label"
+msgstr ""
 
-#: ./interfaces.py:24
-msgid "Introduction Text"
-msgstr "Text der Einleitung"
+#. Default: "Change"
+#: ./change.py:39
+msgid "change-action"
+msgstr ""
 
-#: ./change.py:45
-msgid ""
-"The introduction text that appears on <a href=\"/\">the site homepage</a> "
-"has been changed."
-msgstr "Die Einleitung auf <a href=\"/\">der Startseite</a> wurde geändert."
-
-#: ./interfaces.py:25
-msgid "The text that you want to see on the site homepage."
-msgstr "Der Text, der auf der Startseite stehen soll."
-
+#. Default: "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
 #: ./browser/templates/change.pt:39
-msgid ""
-"To change the <cite class=\"page\">About</cite> text on the site homepage "
-"write the new text in the editor below and click the <samp "
-"class=\"button\">Change</samp> button."
-msgstr "Um den Text <cite class=\"page\">Über diese Webseite</cite> auf der Startseite zu ändern, schreiben Sie den Text unten im Editor und klicken Sie den <samp class=\"button\">Ändern</samp>-Knopf."
+msgid "change-introduction-instructions"
+msgstr ""
+
+#. Default: "Change"
+#: ./browser/templates/changelink.pt:1
+msgid "change-link"
+msgstr ""
+
+#. Default: "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
+#: ./change.py:46
+msgid "change-success"
+msgstr ""
+
+#. Default: "The text that you want to see on the site homepage."
+#: ./interfaces.py:25
+msgid "introduction-entry-description"
+msgstr ""
+
+#. Default: "Introduction Text"
+#: ./interfaces.py:24
+msgid "introduction-entry-label"
+msgstr ""
+
+#. Default: "<p>There is an error:</p>"
+#: ./change.py:54
+msgid "status-problem"
+msgstr ""
+
+#. Default: "<p>There are errors:</p>"
+#: ./change.py:57
+msgid "status-problems"
+msgstr ""
+
