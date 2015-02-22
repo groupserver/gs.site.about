@@ -1,12 +1,13 @@
 # --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
 # SOME DESCRIPTIVE TITLE.
 # Translators:
+# Alice Rose <heldinz@posteo.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.site.about\n"
 "POT-Creation-Date: 2014-10-24 17:22+0000\n"
-"PO-Revision-Date: 2015-02-16 13:05+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-02-18 15:12+0000\n"
+"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-site-about/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,41 +21,41 @@ msgstr ""
 
 #: ./change.py:53
 msgid "<p>There are errors:</p>"
-msgstr ""
+msgstr "<p>Es gab mehrere Fehler:</p>"
 
 #: ./change.py:51
 msgid "<p>There is an error:</p>"
-msgstr ""
+msgstr "<p>Es gab einen Fehler:</p>"
 
 #: ./browser/templates/about.pt:6
 msgid "About"
-msgstr ""
+msgstr "Über diese Webseite"
 
 #: ./browser/templates/changelink.pt:1 ./change.py:39
 msgid "Change"
-msgstr ""
+msgstr "Ändern"
 
 #: ./change.py:28
 msgid "Change about"
-msgstr ""
+msgstr "\"Über diese Webseite\" ändern"
 
 #: ./interfaces.py:24
 msgid "Introduction Text"
-msgstr ""
+msgstr "Text der Einleitung"
 
 #: ./change.py:45
 msgid ""
 "The introduction text that appears on <a href=\"/\">the site homepage</a> "
 "has been changed."
-msgstr ""
+msgstr "Die Einleitung auf <a href=\"/\">der Startseite</a> wurde geändert."
 
 #: ./interfaces.py:25
 msgid "The text that you want to see on the site homepage."
-msgstr ""
+msgstr "Der Text, der auf der Startseite stehen soll."
 
 #: ./browser/templates/change.pt:39
 msgid ""
 "To change the <cite class=\"page\">About</cite> text on the site homepage "
 "write the new text in the editor below and click the <samp "
 "class=\"button\">Change</samp> button."
-msgstr ""
+msgstr "Um den Text <cite class=\"page\">Über diese Webseite</cite> auf der Startseite zu ändern, schreiben Sie den Text unten im Editor und klicken Sie den <samp class=\"button\">Ändern</samp>-Knopf."
