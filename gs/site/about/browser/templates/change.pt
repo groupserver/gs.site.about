@@ -36,7 +36,8 @@
           enctype="multipart/form-data" method="post" action="."
           tal:attributes="action request/URL" >
       <h1 tal:content="view/label">Edit Profile</h1>
-      <p i18n:translate="" class="intro">
+      <p i18n:translate="change-introduction-instructions" 
+         class="intro">
         To change the <cite class="page">About</cite> text on the
         site homepage write the new text in the editor below and
         click the <samp class="button">Change</samp> button.

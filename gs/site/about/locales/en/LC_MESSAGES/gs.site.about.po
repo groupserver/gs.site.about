@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-10-24 17:22+0000\n"
+"POT-Creation-Date: 2015-02-22 22:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,40 +14,53 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./change.py:53
-msgid "<p>There are errors:</p>"
-msgstr ""
-
-#: ./change.py:51
-msgid "<p>There is an error:</p>"
-msgstr ""
-
+#. Default: "About"
 #: ./browser/templates/about.pt:6
-msgid "About"
-msgstr ""
+msgid "about"
+msgstr "About"
 
-#: ./browser/templates/changelink.pt:1
-#: ./change.py:39
-msgid "Change"
-msgstr ""
-
+#. Default: "Change about"
 #: ./change.py:28
-msgid "Change about"
-msgstr ""
+msgid "change-about-form-label"
+msgstr "Change about"
 
-#: ./interfaces.py:24
-msgid "Introduction Text"
-msgstr ""
+#. Default: "Change"
+#: ./change.py:39
+msgid "change-action"
+msgstr "Change"
 
-#: ./change.py:45
-msgid "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
-msgstr ""
-
-#: ./interfaces.py:25
-msgid "The text that you want to see on the site homepage."
-msgstr ""
-
+#. Default: "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
 #: ./browser/templates/change.pt:39
-msgid "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
-msgstr ""
+msgid "change-introduction-instructions"
+msgstr "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
+
+#. Default: "Change"
+#: ./browser/templates/changelink.pt:1
+msgid "change-link"
+msgstr "Change"
+
+#. Default: "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
+#: ./change.py:46
+msgid "change-success"
+msgstr "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
+
+#. Default: "The text that you want to see on the site homepage."
+#: ./interfaces.py:25
+msgid "introduction-entry-description"
+msgstr "The text that you want to see on the site homepage."
+
+#. Default: "Introduction Text"
+#: ./interfaces.py:24
+msgid "introduction-entry-label"
+msgstr "Introduction Text"
+
+#. Default: "<p>There is an error:</p>"
+#: ./change.py:54
+msgid "status-problem"
+msgstr "<p>There is an error:</p>"
+
+#. Default: "<p>There are errors:</p>"
+#: ./change.py:57
+msgid "status-problems"
+msgstr "<p>There are errors:</p>"
 

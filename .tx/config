@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[gs-site-about.gs-site-about-pot]
+file_filter = gs/site/about/locales/<lang>/LC_MESSAGES/gs.site.about.po
+source_file = gs/site/about/locales/en/LC_MESSAGES/gs.site.about.po
+source_lang = en
+type = PO
+

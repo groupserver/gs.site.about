@@ -1,76 +1,66 @@
-#
-# Translators:
-# Alice Rose <heldinz@posteo.de>, 2015
-# Mohamed-Younès BOUMEDIENE <m-boumediene@live.fr>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: gs.site.about\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-02-22 22:34+0000\n"
-"PO-Revision-Date: 2015-02-22 20:37+0000\n"
-"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/gs-site-about/language/fr/)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
-"Language: fr\n"
 
 #. Default: "About"
 #: ./browser/templates/about.pt:6
 msgid "about"
-msgstr "À propos"
+msgstr ""
 
 #. Default: "Change about"
 #: ./change.py:28
 msgid "change-about-form-label"
-msgstr "Modifier le texte à propos"
+msgstr ""
 
 #. Default: "Change"
 #: ./change.py:39
 msgid "change-action"
-msgstr "Modifier"
+msgstr ""
 
-#. homepage write the new text in the editor below and click the <samp
-#. class=\"button\">Change</samp> button."
 #. Default: "To change the <cite class=\"page\">About</cite> text on the site homepage write the new text in the editor below and click the <samp class=\"button\">Change</samp> button."
 #: ./browser/templates/change.pt:39
-#, fuzzy
 msgid "change-introduction-instructions"
-msgstr "Pour changer le texte <cite class=\"page\">à propos</cite> sur la page d'accueil, écrivez le nouveau texte dans l'éditeur ci-dessous et cliquez sur le bouton <samp class=\"button\">modifier</samp>."
+msgstr ""
 
 #. Default: "Change"
 #: ./browser/templates/changelink.pt:1
 msgid "change-link"
-msgstr "Modifier"
+msgstr ""
 
-#. homepage</a> has been changed."
 #. Default: "The introduction text that appears on <a href=\"/\">the site homepage</a> has been changed."
 #: ./change.py:46
-#, fuzzy
 msgid "change-success"
-msgstr "Le texte d'introduction qui est sur <a href=\"/\">l'accueil du site</a> à été modifié"
+msgstr ""
 
 #. Default: "The text that you want to see on the site homepage."
 #: ./interfaces.py:25
 msgid "introduction-entry-description"
-msgstr "Le texte que vous souhaitez voir sur la page d'accueil"
+msgstr ""
 
 #. Default: "Introduction Text"
 #: ./interfaces.py:24
 msgid "introduction-entry-label"
-msgstr "Texte d'introduction"
+msgstr ""
 
 #. Default: "<p>There is an error:</p>"
 #: ./change.py:54
 msgid "status-problem"
-msgstr "<p>Il y a une erreur :</p>"
+msgstr ""
 
 #. Default: "<p>There are errors:</p>"
 #: ./change.py:57
 msgid "status-problems"
-msgstr "<p>Il y a des erreurs :</p>"
+msgstr ""
 

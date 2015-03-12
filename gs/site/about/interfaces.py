@@ -21,9 +21,11 @@ from . import GSMessageFactory as _
 
 class ISiteIntro(Interface):
     introduction = Text(
-        title=_('Introduction Text'),
-        description=_('The text that you want to see on the site '
-                      'homepage.'),
+        title=_('introduction-entry-label', 'Introduction Text'),
+        description=_(
+            'introduction-entry-description',
+            'The text that you want to see on the site '
+            'homepage.'),
         required=True)
 
 
