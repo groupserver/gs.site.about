@@ -5,9 +5,14 @@ Changelog
 ------------------
 
 * Adding support for Transifex_
+* [DE] Adding a German translation, with thanks to Alice_
+* [FR] Adding a French translation, with thanks to `Razique Mahroua`_
 
 .. _Transifex:
    https://www.transifex.com/projects/p/gs-site-about/
+.. _Alice: http://groupserver.org/p/alice
+.. _Razique Mahroua:
+   https://www.transifex.com/accounts/profile/Razique/
 
 2.6.1 (2014-11-07)
 ------------------
@@ -66,4 +71,4 @@ Changelog
 
 * Initial import, moving the code here from ``gs.site.home``
 
-..  LocalWords:  Changelog GitHub reStructuredText
+..  LocalWords:  Changelog GitHub reStructuredText Transifex
