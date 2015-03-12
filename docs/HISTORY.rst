@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.6.2 (2015-03-12)
+------------------
+
+* Adding support for Transifex_
+
+.. _Transifex:
+   https://www.transifex.com/projects/p/gs-site-about/
+
 2.6.1 (2014-11-07)
 ------------------
 

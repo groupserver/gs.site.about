@@ -7,7 +7,7 @@ The About box on a GroupServer Site
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2014-10-24
+:Date: 2015-03-12
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 4.0 International License`_
@@ -43,7 +43,10 @@ Resources
 =========
 
 - Code repository: https://github.com/groupserver/gs.site.about/
-- Questions and comments to http://groupserver.org/groups/development/
+- Translations:
+  https://www.transifex.com/projects/p/gs-site-about/
+- Questions and comments to
+  http://groupserver.org/groups/development/
 - Report bugs at https://redmine.iopen.net/projects/groupserver/
 
 .. _GroupServer.org: http://groupserver.org/
