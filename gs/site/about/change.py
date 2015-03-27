@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+# Copyright © 2013, 2014, 2015 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -36,7 +36,7 @@ class Change(SiteForm):
         self.form_fields['introduction'].custom_widget = \
             wym_editor_widget
 
-    @form.action(label=_('change-action', 'Change'),
+    @form.action(label=_('change-action', 'Change'), name='change',
                  failure='handle_change_action_failure')
     def handle_change(self, action, data):
         ctx = get_the_actual_instance_from_zope(self.context)

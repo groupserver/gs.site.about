@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.6.3 (2015-03-27)
+------------------
+
+* Fixing the Change button, with thanks to `Piers Goodhew`_
+
+.. _Piers Goodhew:
+   http://groupserver.org/r/post/2hVVL0GRXYeVEwMvlf3vKb
+
 2.6.2 (2015-03-12)
 ------------------
 
@@ -71,4 +79,5 @@ Changelog
 
 * Initial import, moving the code here from ``gs.site.home``
 
-..  LocalWords:  Changelog GitHub reStructuredText Transifex
+..  LocalWords:  Changelog GitHub reStructuredText Transifex Goodhew Razique
+..  LocalWords:  Mahroua
