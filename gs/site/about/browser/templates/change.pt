@@ -6,9 +6,8 @@
       metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
-      <span tal:replace="string:${view/label}: ${view/siteInfo/name}">
-        Change About
-      </span>
+      <tal:block replace="view/label" />:
+      <tal:block replace="view/siteInfo/name" />
     </title>
     <tal:block metal:fill-slot="metadata">
       <link rel="up" href="/" title="Site Home"
@@ -36,7 +35,7 @@
           enctype="multipart/form-data" method="post" action="."
           tal:attributes="action request/URL" >
       <h1 tal:content="view/label">Edit Profile</h1>
-      <p i18n:translate="change-introduction-instructions" 
+      <p i18n:translate="change-introduction-instructions"
          class="intro">
         To change the <cite class="page">About</cite> text on the
         site homepage write the new text in the editor below and
