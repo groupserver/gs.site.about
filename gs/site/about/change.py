@@ -12,9 +12,10 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ############################################################################
-from __future__ import absolute_import, unicode_literals
+from __future__ import absolute_import, unicode_literals, print_function
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
+from gs.core import to_unicode_or_bust
 from gs.content.form.base import SiteForm
 from gs.content.form.base.wymeditor import wym_editor_widget
 from gs.content.form.base.utils import enforce_schema
@@ -33,8 +34,11 @@ class Change(SiteForm):
     def __init__(self, context, request):
         super(Change, self).__init__(context, request)
         enforce_schema(context, ISiteIntro)
-        self.form_fields['introduction'].custom_widget = \
-            wym_editor_widget
+        if type(context.introduction) == str:
+            # If the introduction-text is a string then convert it to a Unicode object
+            s = to_unicode_or_bust(context.introduction)
+            context.introduction = s
+        self.form_fields['introduction'].custom_widget = wym_editor_widget
 
     @form.action(label=_('change-action', 'Change'), name='change',
                  failure='handle_change_action_failure')
