@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.6.5 (2016-01-19)
+------------------
+
+* Following the update to the GS WYMeditor code
+
 2.6.4 (2016-01-11)
 ------------------
 
