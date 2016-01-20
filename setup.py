@@ -69,6 +69,7 @@ setup(
         'zope.tales',
         'zope.viewlet',
         'Zope2',
+        'gs.core',
         'gs.content.form.base',
         'gs.content.js.wymeditor[zope]',
         'gs.content.layout',

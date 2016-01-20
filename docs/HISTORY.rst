@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * Following the update to the GS WYMeditor code
+* Fixing a Unicode decode error
 
 2.6.4 (2016-01-11)
 ------------------
